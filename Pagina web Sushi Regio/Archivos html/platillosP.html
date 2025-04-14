@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platillos</title>
+    <link rel="stylesheet" href="../Archivos CSS/platillosE.css">
+    <script src="../Archivos JS/platillos.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="menu container">
+            <a href="index.html" class="logo">
+                <img src="../platillos/logo.png" alt="Logo" class="logo-img">
+            </a>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="../imagen/menu.png" class="menu-icono" alt="">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="Servicios.html">Servicios</a></li>
+                    <li><a href="platillosP.html">Platillos</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-content container">
+            <h1>Menu</h1>
+        </div>
+    </header>        
+        <section class="sushi-regio">
+            <div class="sushi-regio-content container">
+                <h2>Platillos Principales</h2>
+                <div class="platillos-grupo">
+                    <div class="platillos-1">
+                        <div class="cono-regio-img" onclick="openModal('modal-cono-regio')">
+                            <span class="ingredientes">
+                                <h4>Ingredientes</h4>
+                                <ul>
+                                    <li>Arroz</li>
+                                    <li>Trozos de sirloin</li>
+                                    <li>Camarones tempura</li>
+                                    <li>Aguacate</li>
+                                    <li>Mayonesa norteña</li>
+                                    <li>Ralladura de limón</li>
+                                    <li>Alga nori</li>
+                                    <li>Salsa agridulce</li>
+                                </ul>
+                            </span>
+                        </div>
+                        <h3>Cono Regio</h3>
+                    </div>
+
+                    <div class="platillos-1">
+                        <div class="fagita-o-pastor-img" onclick="openModal('modal-fagita-o-pastor')">
+                            <span class="ingredientes">
+                                <h4>Ingredientes</h4>
+                                <ul>
+                                    <li>Arroz</li>
+                                    <li>Fajita o Pastor</li>
+                                    <li>Alga Nori</li>
+                                    <li>Rebanadas de Piña</li>
+                                    <li>Aguacate en Tiras</li>
+                                    <li>Cebolla Morada</li>
+                                    <li>Queso Crema</li>
+                                </ul>
+                            </span>
+                        </div>
+                        <h3>Sushi de Fajita o Pastor</h3>
+                    </div>
+
+                    <div class="platillos-1">
+                        <div class="res-takaki-img" onclick="openModal('modal-res-takaki')">
+                            <span class="ingredientes">
+                                <h4>Ingredientes</h4>
+                                <ul>
+                                    <li>Arroz</li>
+                                    <li>Alga Nori</li>
+                                    <li>Salsa De Soya</li>
+                                    <li>Aceite de Sésamo</li>
+                                    <li>Jengibre</li>
+                                    <li>Wasabi</li>
+                                    <li>Aguacate en Tiras</li>
+                                    <li>Cebollin picado</li>
+                                    <li>Semillas de sesamo</li>
+                                </ul>
+                            </span>
+                        </div>
+                        <h3>Sushi de Res Takaki</h3>
+                    </div>
+
+                    <div class="platillos-1">
+                        <div class="empanizado-tocino-img" onclick="openModal('modal-empanizado-tocino')">
+                            <span class="ingredientes">
+                                <h4>Ingredientes</h4>
+                                <ul>
+                                    <li>Arroz</li>
+                                    <li>Pepino sin Semillas</li>
+                                    <li>Sushi Empanizado</li>
+                                    <li>Aguacate en Rebandas</li>
+                                    <li>Tocino Frito</li>
+                                    <li>Tocino Crujiente</li>
+                                    <li>Queso Crema</li>
+                                    <li>Salsa BBQ</li>
+                                </ul>
+                            </span>
+                        </div>
+                        <h3>Sushi Empanizado con Tocino</h3>
+                    </div>
+
+                    <div class="platillos-1">
+                        <div class="sushi-norteño-img" onclick="openModal('modal-sushi-norteño')">
+                            <span class="ingredientes">
+                                <h4>Ingredientes</h4>
+                                <ul>
+                                    <li>Arroz</li>
+                                    <li>Alga Nori</li>
+                                    <li>Carne de Res y Ahumada</li>
+                                    <li>Queso Asedero fundido</li>
+                                    <li>Chile Jalapeño</li>
+                                    <li>Salsa Tamarindo</li>
+                                    <li>Mayones con Chipotle</li>
+                                    <li>Ralladura de Limon</li>
+                                </ul>
+                            </span>
+                        </div>
+                        <h3>Sushi Norteño Ahumado</h3>
+                    </div>
+
+                    <div class="platillos-1">
+                        <div class="sushi-regio-img" onclick="openModal('modal-sushi-regio')">
+                            <span class="ingredientes">
+                                <h4>Ingredientes</h4>
+                                <ul>
+                                    <li>Arroz</li>
+                                    <li>Alga Nori</li>
+                                    <li>Carne de Res</li>
+                                    <li>Aguacate</li>
+                                    <li>Champiñones</li>
+                                    <li>Queso Deterrido</li>
+                                    <li>Cebollin Picado</li>
+                                    <li>Empanizado</li>
+                                    <li>Salsa Teriyaki o Dulce</li>
+                                </ul>
+                            </span>
+                        </div>
+                        <h3>Sushi Regio</h3>
+                    </div>
+
+                    <div class="platillos-1">
+                        <div class="sushi-charro-img" onclick="openModal('modal-sushi-charro')">
+                            <span class="ingredientes">
+                                <h4>Ingredientes</h4>
+                                <ul>
+                                    <li>Arroz</li>
+                                    <li>Alga Nori</li>
+                                    <li>Cabrito Desmenuzado</li>
+                                    <li>Cebolla Caramelizada</li>
+                                    <li>Queso Panela</li>
+                                    <li>Salsa de Chila Pasilla</li>
+                                </ul>
+                            </span>
+                        </div>
+                        <h3>Sushi Charro Roll</h3>
+                    </div>
+
+                    <div class="platillos-1">
+                        <div class="sushi-cabrito-img" onclick="openModal('modal-sushi-cabrito')">
+                            <span class="ingredientes">
+                                <h4>Ingredientes</h4>
+                                <ul>
+                                    <li>Arroz</li>
+                                    <li>Alga Nori</li>
+                                    <li>Camaron Empanizado</li>
+                                    <li>Mango en Cubos</li>
+                                    <li>Pepinos</li>
+                                    <li>Crema con Habanero</li>
+                                </ul>
+                            </span>
+                        </div>
+                        <h3>Sushi Cabrito Maki</h3>
+                    </div>
+
+                    <div class="platillos-1">
+                        <div class="sushi-sinaloa-img" onclick="openModal('modal-sushi-sinaloa')">
+                            <span class="ingredientes">
+                                <h4>Ingredientes</h4>
+                                <ul>
+                                    <li>Arroz</li>
+                                    <li>Alga Nori</li>
+                                    <li>Chorizo Frito</li>
+                                    <li>Frijoles Refritos</li>
+                                    <li>Queso Asadero</li>
+                                    <li>Aguacate</li>
+                                    <li>Jalapeño en Tiras</li>
+                                </ul>
+                            </span>
+                        </div>
+                        <h3>Sushi Sinaloa Crunch</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Modal para el Cono Regio -->
+         <div id="modal-cono-regio" class="modal">
+            <div class="modal-content">
+                <h2>Historia del Cono Regio</h2>
+                <p>La suavidad del arroz japonés se encuentra con el crujiente camarón tempura, 
+                    el cremoso aguacate y una mayonesa especial, fusionada con el inconfundible sazón norteño. 
+                    Trozos jugosos de sirloin realzan su sabor, mientras un toque de ralladura de limón y un ligero baño de salsa 
+                    agridulce equilibran cada bocado. Este sushi  norteño no solo deleita tu paladar, sino que te transporta a 
+                    la esencia de la tradición y autenticidad del norte en cada mordida.</p>
+                <button class="modal-close" onclick="closeModal('modal-cono-regio')">
+                    Cerrar
+                </button>
+            </div>
+        </div>
+        <!-- Modal para el Sushi de Fajita o Pastor -->
+         <div id="modal-fagita-o-pastor" class="modal">
+            <div class="modal-content">
+                <h2>Historia del Sushi de Fagita o Pastor</h2>
+                <p>El sushi de fajita o pastor surgió como una opción más “mexicanizada” para quienes no se 
+                    animaban a probar pescado crudo. Así, los chefs comenzaron a rellenar los rollos con carne 
+                    al pastor, fajita, y otros ingredientes típicos como la piña o el aguacate, e incluso los 
+                    cubrían con queso gratinado. Se volvió muy popular en restaurantes que ofrecían “sushi fusión” 
+                    o “sushi caliente”, y se considera una botana ideal para quienes buscan lo mejor de dos mundos: 
+                    el sushi y los tacos.</p>
+                <button class="modal-close" onclick="closeModal('modal-fagita-o-pastor')">
+                    Cerrar
+                </button>
+            </div>
+         </div>
+        <!-- Modal para el Sushi de Res Takaki -->
+            <div id="modal-res-takaki" class="modal">
+                <div class="modal-content">
+                    <h2>Historia del Sushi de Res Takaki</h2>
+                    <p>El sushi de res Takaki es una deliciosa fusión de sabores que combina la tradición japonesa 
+                        con la riqueza de la carne de res. Este platillo se elabora con arroz japonés, carne de res 
+                        marinada y verduras frescas, todo envuelto en alga nori. La carne se cocina a la parrilla o 
+                        se sella rápidamente para mantener su jugosidad y sabor. El resultado es un sushi único que 
+                        ofrece una experiencia culinaria diferente y deliciosa.</p>
+                    <button class="modal-close" onclick="closeModal('modal-res-takaki')">
+                        Cerrar
+                    </button>
+                </div>
+            </div>
+        <!-- Modal para el Sushi Empanizado con Tocino -->
+        <div id="modal-empanizado-tocino" class="modal">
+            <div class="modal-content">
+                <h2>Historia del Sushi Empanizado con Tocino</h2>
+                <p>El sushi empanizado con tocino es una deliciosa fusión de sabores que combina la tradición 
+                    japonesa con un toque crujiente y salado. Este platillo se elabora con arroz japonés, 
+                    pescado o mariscos, y se empaniza con una mezcla de pan rallado y tocino crujiente. 
+                    El resultado es un sushi único que ofrece una experiencia culinaria diferente y deliciosa.</p>
+                <button class="modal-close" onclick="closeModal('modal-empanizado-tocino')">
+                    Cerrar
+                </button>
+            </div>
+        </div>
+        <!-- Modal para el Sushi Norteño Ahumado -->
+         <div id="modal-sushi-norteño" class="modal">
+            <div class="modal-content">
+                <h2>Historia del Sushi Norteño Ahumado</h2>
+                <p>
+                    Este rollo destaca por su carne ahumada, que aporta un sabor profundo y una textura jugosa. 
+                    El queso asadero fundido envuelve cada pieza con una capa de cremosidad, mientras que los chiles 
+                    toreados añaden un toque picante y vibrante. La combinación con mayonesa de chipotle y la salsa 
+                    de tamarindo y piloncillo proporciona el contraste ideal entre lo dulce, lo picante y lo umami. 
+                    Perfecto para quienes buscan una experiencia gastronómica audaz y auténticamente norteña.
+                </p>
+                <button class="modal-close" onclick="closeModal('modal-sushi-norteño')">
+                    Cerrar
+                </button>
+            </div>
+         </div>
+        <!-- Modal para el Sushi Regio -->
+            <div id="modal-sushi-regio" class="modal">
+                <div class="modal-content">
+                    <h2>Historia del Sushi Regio</h2>
+                    <p>El sushi regio es una deliciosa fusión de sabores que combina la tradición japonesa con la 
+                        riqueza de la cocina norteña. Este platillo se elabora con arroz japonés, carne asada, 
+                        frijoles refritos y queso fundido, todo envuelto en alga nori. El resultado es un sushi 
+                        único que ofrece una experiencia culinaria diferente y deliciosa.</p>
+                    <button class="modal-close" onclick="closeModal('modal-sushi-regio')">
+                        Cerrar
+                    </button>
+                </div>
+            </div>
+        <!-- Modal para el Sushi Charro Roll -->
+        <div id="modal-sushi-charro" class="modal">
+            <div class="modal-content">
+                <h2>Historia del Sushi Charro Roll</h2>
+                <p>El sushi charro roll es una deliciosa fusión de sabores que combina la tradición japonesa 
+                    con la riqueza de la cocina mexicana. Este platillo se elabora con arroz japonés, chorizo, 
+                    frijoles y queso fresco, todo envuelto en alga nori. El resultado es un sushi único que 
+                    ofrece una experiencia culinaria diferente y deliciosa.</p>
+                <button class="modal-close" onclick="closeModal('modal-sushi-charro')">
+                    Cerrar
+                </button>
+            </div>
+        </div>
+        <!-- Modal para el Sushi Cabrito Maki -->
+         <div id="modal-sushi-cabrito" class="modal">
+            <div class="modal-content">
+                <h2>
+                    Historia del Sushi Cabrito Maki
+                </h2>
+                <p>
+                    El sushi cabrito maki es una deliciosa fusión de sabores que combina la tradición japonesa 
+                    con la riqueza de la cocina norteña. Este platillo se elabora con arroz japonés, carne de 
+                    cabrito, queso de cabra y hierbas frescas, todo envuelto en alga nori. El resultado es un sushi 
+                    único que ofrece una experiencia culinaria diferente y deliciosa.</p>
+                <button class="modal-close" onclick="closeModal('modal-sushi-cabrito')">
+                    Cerrar
+                </button>
+                </p>
+            </div>
+         </div>
+        <!-- Modal para el Sushi Sinaloa Crunch -->
+        <div id="modal-sushi-sinaloa" class="modal">
+            <div class="modal-content">
+                <h2>Historia del Sushi Sinaloa Crunch</h2>
+                <p>El sushi sinaloa crunch es una deliciosa fusión de sabores que combina la tradición japonesa 
+                    con la riqueza de la cocina sinaloense. Este platillo se elabora con arroz japonés, camarones, 
+                    queso crema y chile serrano, todo envuelto en alga nori. El resultado es un sushi único que 
+                    ofrece una experiencia culinaria diferente y deliciosa.</p>
+                <button class="modal-close" onclick="closeModal('modal-sushi-sinaloa')">
+                    Cerrar
+                </button>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer-content container">
+                <div class="link">
+                    <h3>CONTACTOS</h3>
+                    <ul>
+                        <li><a href="#">81********</a></li>
+                        <li><a href="#">81********</a></li>
+                        <li><a href="#">81********</a></li>
+                    </ul>
+                </div>
+                <div class="link">
+                    <h3>Ubicaciones</h3>
+                    <ul>
+                        <li><a href="#">Plaza Regia Gourmet</a></li>
+                        <li><a href="#">Parque Industrial Valle Norte</a></li>
+                        <li><a href="#">Paseo del Río San Pedro</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+</body>
+</html>

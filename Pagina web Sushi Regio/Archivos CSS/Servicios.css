@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Wallpoet&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 12000px;
+    margin: 0 auto;
+}
+
+.header {
+    background-image: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)),
+        url(../imagen/bg1.jpg);
+    background-size: contain;
+    background-position: center bottom;
+}
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-img {
+    width: 100px; 
+    height: auto;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #dfdfdf;
+    display: block;
+    font-weight: 600;
+}
+
+.menu .navbar ul li a:hover {
+    color: #CE967B;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icon {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-content {
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 75px;
+    line-height: 2;
+    color: #dfdfdf;
+    text-transform: uppercase;
+    margin-bottom: 10x;
+}
+
+.Servicios-content {
+    background-color: #5a5a5a80;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 2300px;
+    height: auto;
+    margin-top: 130px;
+    margin-bottom: 130px;
+}
+body {
+    background-image: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)), url(../imagen/fondo-platillos.png);
+    background-size: cover;
+    background-position: center;
+}
+/* Estilos para el formulario */
+form {
+    background-color: #d3d3d3; /* Cambia el color de fondo del formulario a gris */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.form-grupo {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 90px;
+}
+
+.form-1 {
+    background-color: #b4adad8c;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.form-1 h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+form label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+form input, form textarea, form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+form input:focus, form textarea:focus, form select:focus {
+    border-color: #CE967B;
+    outline: none;
+    box-shadow: 0 0 5px rgba(206, 150, 123, 0.5);
+}
+
+form button {
+    background-color: #CE967B;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #b07a63;
+}
+
+#total-container {
+    background-color: #b4adad;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+    margin-left: 980px;
+}
+.footer {
+    padding: 40px 0;
+    background-color: #000000;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.link h3 {
+    font-family: 'poppins', sans-serif;
+    font-size: 1.5rem;
+    color: #F9FAFC;
+    margin-bottom: 5px;
+}
+
+.link a {
+    font-size: 1.2rem;
+    color: #C5C5C5;
+    display: block;
+    margin-bottom: 15px;
+}

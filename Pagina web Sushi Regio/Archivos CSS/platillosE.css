@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Wallpoet&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 12000px;
+    margin: 0 auto;
+}
+
+.header {
+    background-image: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)),
+        url(../imagen/bg1.jpg);
+    background-size: contain;
+    background-position: center bottom;
+}
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-img {
+    width: 100px; 
+    height: auto;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #dfdfdf;
+    display: block;
+    font-weight: 600;
+}
+
+.menu .navbar ul li a:hover {
+    color: #CE967B;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icon {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-content {
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 75px;
+    line-height: 2;
+    color: #dfdfdf;
+    text-transform: uppercase;
+    margin-bottom: 10x;
+}
+.sushi-regio h2 {
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    font-size: 45px;
+    font-weight: 700;
+    color: #dfdfdf;
+}
+
+.sushi-regio {
+    background-image: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)),
+        url(../imagen/fondo-platillos.png);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; ;
+    padding: 25px;
+}
+
+.platillos-grupo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   min-height: 72vh;
+   
+}
+
+.platillos-1 {
+    margin-top: 75px;
+    margin-right: 45px;
+    margin-left: 45px;
+    margin-bottom: 75px;
+    background-color: #CE967B;
+    height: 440px;
+    width: auto;
+    max-width: 2300px;
+    background-color: #929090;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+/* Efectos aplicados a todas las imágenes */
+.platillos-1 div {
+    position: relative; /* Necesario para posicionar el texto */
+    background-size: cover;
+    background-position: center;
+    border-radius: 35px;
+    width: 500px;
+    height: 350px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+    overflow: hidden; /* Para evitar que el contenido extra se salga */
+}
+
+.platillos-1 div:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.platillos-1 div::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.712); /* Oscurece la imagen */
+    opacity: 0;
+    transition: opacity 0.3s;
+    border-radius: 35px;
+}
+
+.platillos-1 div:hover::after {
+    opacity: 1;
+}
+
+.platillos-1 div span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 1;
+}
+
+.platillos-1 div:hover span {
+    opacity: 1;
+}
+
+/* Consolidando estilos de imágenes específicas */
+.cono-regio-img, .fagita-o-pastor-img, .res-takaki-img, .empanizado-tocino-img, .sushi-norteño-img, .sushi-regio-img, .sushi-charro-img, .sushi-cabrito-img, .sushi-sinaloa-img {
+    background-size: cover;
+    background-position: center;
+    border-radius: 35px;
+    width: 500px;
+    height: 350px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+.cono-regio-img {
+    background-image: url(../platillos/Cono-Regio.jpeg);
+}
+
+.fagita-o-pastor-img {
+    background-image: url(../platillos/Sushi-de-Fajita-o-Pastor.jpeg);
+}
+
+.res-takaki-img {
+    background-image: url(../platillos/Sushi-de-res-takaki.jpeg);
+}
+
+.empanizado-tocino-img {
+    background-image: url(../platillos/Sushi-Empanizado-Con-Tozino.jpeg);
+}
+
+.sushi-norteño-img {
+    background-image: url(../platillos/Sushi-Noretño-Ahumado.jpeg);
+}
+
+.sushi-regio-img {
+    background-image: url(../platillos/Sushi-Regio.jpeg);
+}
+
+.sushi-charro-img {
+    background-image: url(../platillos/Sushi-Charro-Roll.jpeg);
+}
+
+.sushi-cabrito-img {
+    background-image: url(../platillos/Sushi-Cabrito-Maki.jpeg);
+}
+
+.sushi-sinaloa-img {
+    background-image: url(../platillos/Sushi-Sinaloa-Crunch.jpeg);
+}
+
+.platillos-grupo h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #dfdfdf;
+    text-align: center;
+}
+
+.ingredientes {
+    padding: 20px;
+    text-align: left;
+}
+
+.ingredientes h4 {
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #dfdfdf;
+    text-align: center;
+}
+
+.ingredientes ul {
+    font-family: 'poppins', sans-serif;
+    list-style:circle;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #dfdfdf;
+    text-align: left;
+}
+
+.footer {
+    padding: 40px 0;
+    background-color: #000000;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.link h3 {
+    font-family: 'poppins', sans-serif;
+    font-size: 1.5rem;
+    color: #F9FAFC;
+    margin-bottom: 5px;
+}
+
+.link a {
+    font-size: 1.2rem;
+    color: #C5C5C5;
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* Modal container (oculto por defecto) */
+.modal {
+    display: flex; /* Cambiado a flex para mantener el diseño */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro semitransparente */
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Inicialmente invisible */
+    visibility: hidden; /* Oculto inicialmente */
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Transición suave */
+}
+
+/* Cuando el modal está activo */
+.modal.show {
+    opacity: 1; /* Visible */
+    visibility: visible; /* Mostrado */
+}
+
+/* Contenido del modal */
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    transform: scale(0.9); /* Escala inicial */
+    transition: transform 0.3s ease; /* Transición suave */
+}
+
+.modal-content p {
+    font-family: 'poppins', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: justify;
+    margin-top: 15px;
+    color: #000;
+}
+
+/* Cuando el modal está activo */
+.modal.show .modal-content {
+    transform: scale(1); /* Escala normal */
+}
+
+/* Botón para cerrar el modal */
+.modal-close {
+    background-color: #CE967B;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.modal-close:hover {
+    background-color: #a76d5a;
+}
+
+@media(max-width: 968px) {
+
+    .menu {
+        padding: 30px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #323337;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .header {
+        min-height: 0vh;
+    }
+
+    .header-content {
+        padding: 100px 30px;
+    }
+
+    .header-content p {
+        padding: 0;
+    }
+}

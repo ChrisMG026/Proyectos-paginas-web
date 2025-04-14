@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios de Sushi Regio</title>
+    <link rel="stylesheet" href="../Archivos CSS/Servicios.css">
+    
+</head>
+<body>
+    <header class="header">
+        <div class="menu container">
+            <a href="index.html" class="logo">
+                <img src="../platillos/logo.png" alt="Logo" class="logo-img">
+            </a>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="../imagen/menu.png" class="menu-icono" alt="">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="Servicios.html">Servicios</a></li>
+                    <li><a href="platillosP.html">Platillos</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-content container">
+            <h1>Servicios</h1>
+        </div>
+    </header>
+    <section class="Servicios-grupo">
+        <div class="Servicios-content container">
+            <div class="form-grupo">
+                <div class="form-1">
+                    <h2>Elige tus platillos</h2>
+                    <form action="#" method="post" id="platillos-form">
+                        <div id="platillos-container">
+                            <div class="platillo-group">
+                                <label for="platillo">Platillos:</label>
+                                <select name="platillo" class="platillo">
+                                    <option value="Selecciona" disabled selected>Selecciona un platillo</option>
+                                    <option value="Sushi Norteño Ahumado">Sushi Norteño Ahumado - $150</option>
+                                    <option value="Cono Regio">Cono Regio - $120</option>
+                                    <option value="Sushi de Res Tataki">Sushi de Res Tataki - $180</option>
+                                    <option value="Sushi de Fajita o Pastor">Sushi de Fajita o Pastor - $140</option>
+                                    <option value="Sushi Empanizado con Tocino">Sushi Empanizado con Tocino - $160</option>
+                                    <option value="Sushi Regio">Sushi Regio - $170</option>
+                                    <option value="Sushi de Charro Roll">Sushi de Charro Roll - $150</option>
+                                    <option value="Sushi de Cabrito Maki">Sushi de Cabrito Maki - $190</option>
+                                    <option value="Sushi Sinaloa Crunch">Sushi Sinaloa Crunch - $130</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="button" id="add-platillo">Agregar platillo</button>
+                    </form>
+                </div>
+                
+                <div class="form-1">
+                    <h2>Elige tus complementos</h2>
+                    <form action="#" method="post" id="complementos-form">
+                        <div id="complementos-container">
+                            <div class="complemento-group">
+                                <label for="complemento">Complementos:</label>
+                                <select name="complemento" class="complemento">
+                                    <option value="Selecciona" disabled selected>Selecciona un complemento</option>
+                                    <option value="Guacamole">Guacamole - $50</option>
+                                    <option value="Salsa de Aguacate">Salsa de Aguacate - $40</option>
+                                    <option value="Salsa de Chipotle">Salsa de Chipotle - $30</option>
+                                    <option value="Salsa de Mango">Salsa de Mango - $35</option>
+                                    <option value="Salsa de Tamarindo">Salsa de Tamarindo - $35</option>
+                                    <option value="Salsa de Chile Habanero">Salsa de Chile Habanero - $40</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="button" id="add-complemento">Agregar complemento</button>
+                    </form>
+                </div>
+            </div>
+            <form action="Servicios.html" >
+                <input type="submit" value="Enviar">
+            </form>
+            <div id="total-container" class="total">
+                <h3>Total: $<span id="total">0</span></h3>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="link">
+                <h3>CONTACTOS</h3>
+                <ul>
+                    <li><a href="#">81********</a></li>
+                    <li><a href="#">81********</a></li>
+                    <li><a href="#">81********</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>UBICACIONES</h3>
+                <ul>
+                    <li><a href="#">Plaza Regia Gourmet</a></li>
+                    <li><a href="#">Parque Industrial Valle Norte</a></li>
+                    <li><a href="#">Paseo del Río San Pedro</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="../Archivos JS/Servicios.js"></script>
+</body>
+</html>
