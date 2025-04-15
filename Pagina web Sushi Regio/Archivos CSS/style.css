@@ -89,7 +89,8 @@ body {
 }
 
 .header-content p {
-    font-size: 18px;
+    font-family: 'poppins', sans-serif;
+    font-size: 1.2rem;
     color: #C5C5C5;
     padding: 0 80px;
     margin-bottom: 10px;
@@ -139,10 +140,10 @@ body {
     display: flex;
     justify-content: space-around;
     margin-bottom: 20px;
-    margin-right: 70px;
 }
 
 .Sushi_Regio-1 {
+    max-width: 860px;
     padding: 0 95px;
 }
 
@@ -150,7 +151,6 @@ body {
     text-align: justify;
     color: #414247;
     margin-bottom: 15px;
-    margin-right: 50px;
     font-family: 'Poppins', sans-serif;
     font-size: 1.2rem;
 }
@@ -218,6 +218,14 @@ body {
 .Servicios-1 h3 {
     color: #eaccb3;
     font-size: 18px;
+}
+
+.Servicios-content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #F9FAFC;
+    margin-bottom: 15px;
+    text-align: justify;
 }
 
 .general {
@@ -293,7 +301,8 @@ p {
 }
 
 .blog-1 p {
-    font-size: 1.1rem;
+    font-family: 'poppins', sans-serif;
+    font-size: 1.2rem;
     color: #414247;
     margin-bottom: 15px;
     text-align: justify;
@@ -337,8 +346,8 @@ img {
     object-fit: cover;
 }
 
-@media(max-width: 1050px) {
-
+@media(max-width: 1200px) {
+    /* Menú */
     .menu {
         padding: 30px;
     }
@@ -364,61 +373,89 @@ img {
         display: initial;
     }
 
+    /* Encabezado */
     .header {
-        min-height: 0vh;
+        min-height: 50vh;
+        padding: 20px;
     }
 
-    .header-content {
-        padding: 100px 30px;
+    .header-content h1 {
+        font-size: 40px;
+        line-height: 1.2;
     }
 
     .header-content p {
-        padding: 0;
+        font-size: 14px;
+        padding: 0 20px;
     }
 
+    /* Sección Sushi_Regio */
     .Sushi_Regio {
-        padding: 30px;
+        padding: 20px;
     }
 
     .Sushi_Regio-content h2 {
-        padding: 0;
+        font-size: 30px;
+        padding: 0 20px;
     }
 
     .txt-p {
-        padding: 0;
+        font-size: 14px;
+        padding: 0 20px;
     }
 
     .Sushi_Regio-group {
         flex-direction: column;
-        margin-bottom: 0;
+        align-items: center;
     }
 
-    .Sushi_Regio-img {
-        display: none;
-    }
 
-    .Servicios {
-        padding: 30px;
-    }
-    .Servicios-content p {
+    .Sushi_Regio-1 {
         padding: 0;
+        margin-bottom: 20px;
     }
+
+    .Sushi_Regio-1 img {
+        width: 50%;
+        height: auto;
+    }
+
+    /* Sección Servicios */
+    .Servicios {
+        padding: 20px;
+    }
+
+    .Servicios-content h2 {
+        font-size: 30px;
+    }
+
+    .Servicios-content p {
+        font-size: 14px;
+        padding: 0 20px;
+    }
+
     .Servicios-group {
         flex-direction: column;
-        margin-bottom: 0;
+        align-items: center;
     }
 
     .Servicios-1 {
-        margin-bottom: 25px;
+        margin-bottom: 20px;
     }
 
+    .Servicios-1 img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* General */
     .general {
         flex-direction: column;
     }
 
     .general-1 {
         width: 100%;
-        padding: 30px;
+        padding: 20px;
         text-align: center;
     }
 
@@ -426,39 +463,33 @@ img {
         display: none;
     }
 
-    .blog {
-        padding: 30px;
-    }
-
+    /* Blog */
     .blog-content {
         flex-direction: column;
+        align-items: center;
     }
 
     .blog-1 {
         padding: 0;
+        margin-bottom: 20px;
     }
 
-    .footer {
-        padding: 30px;
+    .blog-1 img {
+        width: 100%;
+        height: auto;
     }
 
+    /* Footer */
     .footer-content {
         flex-direction: column;
         text-align: center;
     }
 
-    .Sushi_Regio-1 img, .blog-1 img, .Servicios-1 img {
-        width: 100%;
-        height: auto;
-    }
-}
-
-@media(max-width: 1500px) {
-    .SushiRegio1-img {
-        display: none;
+    .footer-content .link h3 {
+        font-size: 1.2rem;
     }
 
-    .SushiRegio-img {
-        display: none;
+    .footer-content .link a {
+        font-size: 1rem;
     }
 }

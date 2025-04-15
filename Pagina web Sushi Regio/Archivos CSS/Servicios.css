@@ -130,7 +130,7 @@ form {
 .form-1 h2 {
     font-size: 24px;
     margin-bottom: 20px;
-    color: #333;
+    color: #111010;
     text-align: center;
 }
 
@@ -205,7 +205,7 @@ form button:hover {
     margin-bottom: 15px;
 }
 
-@media(max-width: 968px) {
+@media(max-width: 1068px) {
 
     .menu {
         padding: 30px;
@@ -233,21 +233,23 @@ form button:hover {
     }
 
     .header {
-        min-height: 0vh;
+        min-height: 15vh;
+        padding: 20px;
     }
 
-    .header-content {
-        padding: 100px 30px;
+    .header-content h1 {
+        font-size: 40px;
+        line-height: 3.5;
     }
 
     .header-content p {
-        padding: 0;
+        font-size: 14px;
+        padding: 0 20px;
     }
 
-    .Servicios-content {
+    .form-grupo {
         display: flex;
-        flex-direction: column;
-
+        flex-direction: column; /* Cambia a columna para pantallas más pequeñas */
     }
 
     #total-container {
