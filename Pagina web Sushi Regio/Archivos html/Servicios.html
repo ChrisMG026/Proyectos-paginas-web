@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios de Sushi Regio</title>
     <link rel="stylesheet" href="../Archivos CSS/Servicios.css">
-    
 </head>
 <body>
     <header class="header">
@@ -34,55 +33,54 @@
             <div class="form-grupo">
                 <div class="form-1">
                     <h2>Elige tus platillos</h2>
-                    <form action="#" method="post" id="platillos-form">
-                        <div id="platillos-container">
-                            <div class="platillo-group">
-                                <label for="platillo">Platillos:</label>
-                                <select name="platillo" class="platillo">
-                                    <option value="Selecciona" disabled selected>Selecciona un platillo</option>
-                                    <option value="Sushi Norteño Ahumado">Sushi Norteño Ahumado - $150</option>
-                                    <option value="Cono Regio">Cono Regio - $120</option>
-                                    <option value="Sushi de Res Tataki">Sushi de Res Tataki - $180</option>
-                                    <option value="Sushi de Fajita o Pastor">Sushi de Fajita o Pastor - $140</option>
-                                    <option value="Sushi Empanizado con Tocino">Sushi Empanizado con Tocino - $160</option>
-                                    <option value="Sushi Regio">Sushi Regio - $170</option>
-                                    <option value="Sushi de Charro Roll">Sushi de Charro Roll - $150</option>
-                                    <option value="Sushi de Cabrito Maki">Sushi de Cabrito Maki - $190</option>
-                                    <option value="Sushi Sinaloa Crunch">Sushi Sinaloa Crunch - $130</option>
-                                </select>
-                            </div>
+                    <div id="platillos-container">
+                        <div class="platillo-group">
+                            <label for="platillo">Platillos:</label>
+                            <select name="platillo" class="platillo" id="platillo-select">
+                                <option value="Selecciona" disabled selected>Selecciona un platillo</option>
+                                <option value="Sushi Norteño Ahumado - 150">Sushi Norteño Ahumado - $150</option>
+                                <option value="Cono Regio - 120">Cono Regio - $120</option>
+                                <option value="Sushi de Res Tataki - 180">Sushi de Res Tataki - $180</option>
+                                <option value="Sushi de Fajita o Pastor - 140">Sushi de Fajita o Pastor - $140</option>
+                                <option value="Sushi Empanizado con Tocino - 160">Sushi Empanizado con Tocino - $160</option>
+                                <option value="Sushi Regio - 170">Sushi Regio - $170</option>
+                                <option value="Sushi de Charro Roll - 150">Sushi de Charro Roll - $150</option>
+                                <option value="Sushi de Cabrito Maki - 190">Sushi de Cabrito Maki - $190</option>
+                                <option value="Sushi Sinaloa Crunch - 130">Sushi Sinaloa Crunch - $130</option>
+                            </select>
                         </div>
-                        <button type="button" id="add-platillo">Agregar platillo</button>
-                    </form>
+                    </div>
+                    <button type="button" id="add-platillo">Agregar platillo</button>
+                    <div id="platillos-seleccionados" class="seleccionados"></div>
                 </div>
                 
                 <div class="form-1">
                     <h2>Elige tus complementos</h2>
-                    <form action="#" method="post" id="complementos-form">
-                        <div id="complementos-container">
-                            <div class="complemento-group">
-                                <label for="complemento">Complementos:</label>
-                                <select name="complemento" class="complemento">
-                                    <option value="Selecciona" disabled selected>Selecciona un complemento</option>
-                                    <option value="Guacamole">Guacamole - $50</option>
-                                    <option value="Salsa de Aguacate">Salsa de Aguacate - $40</option>
-                                    <option value="Salsa de Chipotle">Salsa de Chipotle - $30</option>
-                                    <option value="Salsa de Mango">Salsa de Mango - $35</option>
-                                    <option value="Salsa de Tamarindo">Salsa de Tamarindo - $35</option>
-                                    <option value="Salsa de Chile Habanero">Salsa de Chile Habanero - $40</option>
-                                </select>
-                            </div>
+                    <div id="complementos-container">
+                        <div class="complemento-group">
+                            <label for="complemento">Complementos:</label>
+                            <select name="complemento" class="complemento" id="complemento-select">
+                                <option value="Selecciona" disabled selected>Selecciona un complemento</option>
+                                <option value="Guacamole - 50">Guacamole - $50</option>
+                                <option value="Salsa de Aguacate - 40">Salsa de Aguacate - $40</option>
+                                <option value="Salsa de Chipotle - 30">Salsa de Chipotle - $30</option>
+                                <option value="Salsa de Mango - 35">Salsa de Mango - $35</option>
+                                <option value="Salsa de Tamarindo - 35">Salsa de Tamarindo - $35</option>
+                                <option value="Salsa de Chile Habanero - 40">Salsa de Chile Habanero - $40</option>
+                            </select>
                         </div>
-                        <button type="button" id="add-complemento">Agregar complemento</button>
-                    </form>
+                    </div>
+                    <button type="button" id="add-complemento">Agregar complemento</button>
+                    <div id="complementos-seleccionados" class="seleccionados"></div>
                 </div>
             </div>
-            <form action="#" >
-                <input type="submit" value="Enviar">
-            </form>
+            
             <div id="total-container" class="total">
                 <h3>Total: $<span id="total">0</span></h3>
             </div>
+            
+            <button type="button" id="enviar-pedido" class="btn-enviar">Enviar Pedido</button>
+            <div id="mensaje"></div>
         </div>
     </section>
     <footer class="footer">

@@ -7,9 +7,13 @@
     list-style: none;
 }
 
-
 body {
-  font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)), url(../imagen/fondo-platillos.png);
+    background-size: cover;
+    background-position: center;
 }
 
 .container {
@@ -25,6 +29,7 @@ body {
     background-size: contain;
     background-position: center bottom;
 }
+
 .menu {
     position: absolute;
     top: 0;
@@ -82,6 +87,7 @@ body {
     margin-bottom: 10x;
 }
 
+/* Contenedor principal de servicios */
 .Servicios-content {
     background-color: #5a5a5a80;
     padding: 20px;
@@ -92,31 +98,17 @@ body {
     margin-top: 130px;
     margin-bottom: 130px;
 }
-body {
-    background-image: linear-gradient(
-        rgba(0,0,0,0.7),
-        rgba(0,0,0,0.7)), url(../imagen/fondo-platillos.png);
-    background-size: cover;
-    background-position: center;
-}
-/* Estilos para el formulario */
-form {
-    background-color: #d3d3d3; /* Cambia el color de fondo del formulario a gris */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 500px;
-    width: 100%;
-    margin: 20px auto;
-}
 
+/* Grupos de formularios (ahora divs) */
 .form-grupo {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-evenly;
     margin-top: 90px;
+    flex-wrap: wrap;
 }
 
+/* Cada sección de selección (platillos/complementos) */
 .form-1 {
     background-color: #b4adad8c;
     padding: 20px;
@@ -134,29 +126,36 @@ form {
     text-align: center;
 }
 
-form label {
+/* Estilos para los selects y labels */
+.platillo-group, .complemento-group {
+    margin-bottom: 20px;
+}
+
+.platillo-group label, .complemento-group label {
     display: block;
     font-size: 16px;
     margin-bottom: 8px;
     color: #555;
 }
 
-form input, form textarea, form select {
+.platillo, .complemento {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #000000;
     border-radius: 4px;
     font-size: 14px;
+    background-color: white;
 }
 
-form input:focus, form textarea:focus, form select:focus {
+.platillo:focus, .complemento:focus {
     border-color: #CE967B;
     outline: none;
     box-shadow: 0 0 5px rgba(206, 150, 123, 0.5);
 }
 
-form button {
+/* Botones */
+#add-platillo, #add-complemento, #enviar-pedido {
     background-color: #CE967B;
     color: #fff;
     padding: 10px 15px;
@@ -165,22 +164,72 @@ form button {
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 10px;
 }
 
-form button:hover {
+#add-platillo:hover, #add-complemento:hover, #enviar-pedido:hover {
     background-color: #b07a63;
 }
 
-#total-container{
+/* Sección de items seleccionados */
+.seleccionados {
+    background-color: #d3d3d3;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.seleccionados h4 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.seleccionados p {
+    color: #555;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+/* Total */
+#total-container {
     background-color: #b4adad;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     max-width: 300px;
     text-align: center;
-    margin: 0 auto; /* Esto centra el contenedor horizontalmente */
+    margin: 20px auto;
 }
 
+#total-container h3 {
+    color: #111010;
+    font-size: 20px;
+}
+
+/* Mensajes de feedback */
+#mensaje {
+    padding: 15px;
+    margin: 20px auto;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 500px;
+}
+
+#mensaje.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+#mensaje.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Footer */
 .footer {
     padding: 40px 0;
     background-color: #000000;
@@ -205,8 +254,8 @@ form button:hover {
     margin-bottom: 15px;
 }
 
+/* Responsive */
 @media(max-width: 1068px) {
-
     .menu {
         padding: 30px;
     }
@@ -248,13 +297,17 @@ form button:hover {
     }
 
     .form-grupo {
-        display: flex;
-        flex-direction: column; /* Cambia a columna para pantallas más pequeñas */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-1 {
+        max-width: 90%;
+        margin-bottom: 30px;
     }
 
     #total-container {
-        max-width: 90%; /* Ajusta el ancho del contenedor */
-        margin: 20px auto; /* Centra el contenedor */
+        max-width: 90%;
     }
 
     .footer {
@@ -265,5 +318,4 @@ form button:hover {
         flex-direction: column;
         text-align: center;
     }
-
 }
