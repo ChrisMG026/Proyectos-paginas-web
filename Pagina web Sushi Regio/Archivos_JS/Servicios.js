@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
             total: total
         };
 
-        fetch('../backend/procesar_pedido.php', {
+        fetch('../back-end/procesar_pedido.php', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

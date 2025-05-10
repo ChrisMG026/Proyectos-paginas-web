@@ -7,14 +7,6 @@ $dbname = 'sushi_regio';
 $username = 'root'; // Usuario por defecto en XAMPP
 $password = '2621'; // Contraseña por defecto en XAMPP (vacía)
 
-try {
-    $testConn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
-    echo json_encode(['success' => true, 'message' => '¡Conexión exitosa a la BD!']);
-    exit;
-} catch(PDOException $e) {
-    echo json_encode(['success' => false, 'message' => 'Error de conexión: ' . $e->getMessage()]);
-    exit;
-}
 
 try {
     $conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
